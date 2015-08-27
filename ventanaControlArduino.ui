@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>282</width>
+    <height>375</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Control Arduino</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0">
+    <widget class="QTextBrowser" name="txtArduino"/>
+   </item>
+   <item row="1" column="0">
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QPushButton" name="btnRel4">
+       <property name="text">
+        <string>Encender Relé 4</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btnRel3">
+       <property name="text">
+        <string>Encender Relé 3</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btnRel2">
+       <property name="text">
+        <string>Encender Relé 2</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btnRel1">
+       <property name="text">
+        <string>Encender Relé 1</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>btnRel4</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>rele4()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>169</x>
+     <y>227</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>227</x>
+     <y>231</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btnRel3</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>rele3()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>169</x>
+     <y>273</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>241</x>
+     <y>277</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btnRel2</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>rele2()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>158</x>
+     <y>308</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>234</x>
+     <y>320</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btnRel1</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>rele1()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>145</x>
+     <y>353</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>259</x>
+     <y>355</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>rele4()</slot>
+  <slot>rele3()</slot>
+  <slot>rele2()</slot>
+  <slot>rele1()</slot>
+ </slots>
+</ui>
